@@ -1,12 +1,14 @@
-# __
+# _Programming Language Suggester_
 
-#### __
+#### _Suggests best programming language to user._
 
-#### By _****_
+#### By _**Woo Jin Kim**_
 
 ## Technologies Used
 
-* __
+* _html_
+* _css_
+* _javascript_
 
 ## Description
 
