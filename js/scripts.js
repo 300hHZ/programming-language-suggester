@@ -1,44 +1,43 @@
-$(document).ready(function(){
+$(document).ready(function () {
   let language = "";
 
-  $(questions).submit(function(event){
-    event.preventDefault(); 
+  $(questions).submit(function (event) {
+    event.preventDefault();
+    const name = $("#nameInput").val();
 
-    if(language === "")
-    {
-      $("#result").show();
-      $("#description").show();
+    if (name === "") {
+      alert("Please enter your name in the first textbox.");
     }
-    else
-    {
-      $("."+ language).hide();
-    }
-    $("span#nameOutput").text($("#nameInput").val());
-    
-    language = $("#language").val();
-
-    if(language === "none")
-    {
-      const age = $("input:radio[name=age]:checked").val();
-      const os = $("#OS").val();
-
-      if ((age === "senior") || (os === "Windows") || (os === "Android"))
-      {
-        language = "csharp";
+    else {
+      if (language === "") {
+        $("#result").fadeIn();
+        $("#description").fadeIn();
+      }
+      else {
+        $("." + language).fadeOut();
       }
 
-      else if ((os === "Mac") || (os === "iOS"))
-      {
-        language = "python";
+      $("span#nameOutput").text(name);
+      language = $("#language").val();
+
+      if (language === "none") {
+        const age = $("input:radio[name=age]:checked").val();
+        const os = $("#OS").val();
+
+        if ((age === "senior") || (os === "Windows") || (os === "Android")) {
+          language = "csharp";
+        }
+
+        else if ((os === "Mac") || (os === "iOS")) {
+          language = "python";
+        }
+
+        else {
+          language = "javascript";
+        }
       }
 
-      else
-      {
-        language = "javascript";
-      }
+      $("." + language).fadeIn();
     }
-    
-  $("." + language).show();
-  
-});
+  });
 });
