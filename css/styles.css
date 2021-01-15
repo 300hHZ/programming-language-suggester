@@ -2,17 +2,26 @@ body{
   background-color: silver;
 }
 
-.headings, .languageName{
+.headings{
   text-align: center;
 }
 
+.card{
+  background-color: silver;
+  border-width: 3px;
+}
+
+select, input#nameInput{
+  width:75% !important;
+  min-width: 180px;
+}
+
+button{
+  margin-left: 25px;
+}
 #result, #description, .python, .csharp, .javascript {
   display: none;
 }
-
-/* select{
-  width: 100px;
-} */
 
 .languageIcons{
   width: 50%;
@@ -26,6 +35,12 @@ body{
   width: 30%;
   height: auto;
   display: block;
+}
+
+.languageName{
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 #wiki{
