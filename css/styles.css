@@ -18,7 +18,7 @@ body{
 }
 
 #result{
-  display: block;
+  display: none;
 }
 
 .python{
@@ -30,7 +30,7 @@ body{
 }
 
 .javascript{
-  display: block;
+  display: none;
 }
 
 .languageName{
@@ -38,7 +38,7 @@ body{
 }
 
 #description{
-  display: block;
+  display: none;
 }
 
 #wiki{
