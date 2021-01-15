@@ -13,26 +13,82 @@
 
 <body>
   <div class="container">
+    <div class="headings">
     <h1>Your future programming language!</h1>
     <p>Welcome! Please enter the following information to determine which programming language you should learn.</p>
+    </div>
+
     <div class="row">
       <div class="col-6">
         <form id="questions">
+
           <div class="form-group">
             <label for="name">What is your name?</label>
             <input id="name" class="form-control" type="text" placeholder="Your name">
           </div>
+
+          <div class="form-group">
+            <label for="language">Which language are you most interested in?</label>
+            <select class="form-control" id="language">
+              <option>Python</option>
+              <option>C#</option>
+              <option>Javascript</option>
+              <option>None of the Above</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="OS">What OS do you use?</label>
+            <select class="form-control" id="OS">
+              <option>Windows</option>
+              <option>Mac</option>
+              <option>Linux</option>
+              <option>Android</option>
+              <option>iOS</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="age">What age bracket are you in?</label>
+            <div class="radio">
+              <input type="radio" name="age" value="u18" checked>Under 18
+            </div>
+            <div class="radio">
+              <input type="radio" name="age" value="adult">18-65
+            </div>
+            <div class="radio">
+              <input type="radio" name="age" value="senior">65+
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="fun">Is coding fun for you?</label>
+            <div class="radio">
+              <input type="radio" name="fun" value="yes" checked><em>HECK</em> yeah!
+            </div>
+            <div class="radio">
+              <input type="radio" name="fun" value="no"><strong>HECK</strong> no.
+            </div>
+          </div>
+
         </form>
       </div>
       <div class="col-6">
         <div class="result">
-          <img class="center-image programIcons" src="https://cdn.iconscout.com/icon/free/png-256/python-14-569257.png" alt="Python">
-          <img class="center-image programIcons" src="https://mateuszchrzanowski.github.io/WebCV/img/icons/csharp.png" alt="C#">
-          <img class="center-image ProgramIcons" src="https://cdn.iconscout.com/icon/free/png-256/javascript-2038874-1720087.png" alt="Javascript">
+          <img id="python" class="center-image programIcons"
+            src="https://cdn.iconscout.com/icon/free/png-256/python-14-569257.png" alt="Python">
+
+          <img id="cSharp" class="center-image programIcons"
+            src="https://mateuszchrzanowski.github.io/WebCV/img/icons/csharp.png" alt="C#">
+
+          <img id="javascript" class="center-image ProgramIcons"
+            src="https://cdn.iconscout.com/icon/free/png-256/javascript-2038874-1720087.png" alt="Javascript">
         </div>
       </div>
     </div>
   </div>
 
 </body>
+
 </html>
