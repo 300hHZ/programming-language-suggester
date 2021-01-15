@@ -1,7 +1,8 @@
 $(document).ready(function(){
-  language = ""; OS = ""; age = ""; fun = "";
+  let language = "";
 
   $(questions).submit(function(event){
+
     event.preventDefault(); 
 
     if(language === "")
@@ -14,9 +15,30 @@ $(document).ready(function(){
       $("."+ language).hide();
     }
     $("span#nameOutput").text($("#nameInput").val());
+    
     language = $("#language").val();
-    console.log(language);
-    $("."+ language).toggle()
 
+    if(language === "none")
+    {
+      const age = $("input:radio[name=age]:checked").val();
+      const os = $("#OS").val();
+      if ((age === "senior") || (os === "Windows") || (os === "Android"))
+      {
+        language = "csharp";
+      }
+
+      else if ((os === "Mac") || (os === "iOS"))
+      {
+        language = "python";
+      }
+
+      else
+      {
+        language = "javascript";
+      }
+    }
+    
+
+    $("." + language).show();
   });
 });
