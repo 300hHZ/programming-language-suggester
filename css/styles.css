@@ -1,44 +1,31 @@
-.headings{
-  text-align: center;
-}
 body{
   background-color: silver;
 }
-.programIcons{
+
+.headings, .languageName{
+  text-align: center;
+}
+
+#result, #description, .python, .csharp, .javascript {
+  display: none;
+}
+
+/* select{
+  width: 100px;
+} */
+
+.languageIcons{
   width: 50%;
   margin: auto;
   box-sizing: border-box;
   display: none;
 }
 .center-image{
+  padding-top: 10px;
   margin: auto;
   width: 30%;
   height: auto;
   display: block;
-}
-
-#result{
-  display: none;
-}
-
-.python{
-  display: none;
-}
-
-.csharp{
-  display: none;
-}
-
-.javascript{
-  display: none;
-}
-
-.languageName{
-  text-align: center;
-}
-
-#description{
-  display: none;
 }
 
 #wiki{
