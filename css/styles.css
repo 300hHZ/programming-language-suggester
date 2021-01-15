@@ -8,6 +8,7 @@ body{
   width: 50%;
   margin: auto;
   box-sizing: border-box;
+  display: none;
 }
 .center-image{
   margin: auto;
@@ -16,6 +17,31 @@ body{
   display: block;
 }
 
-.result{
+#result{
+  display: block;
+}
+
+.python{
   display: none;
+}
+
+.csharp{
+  display: none;
+}
+
+.javascript{
+  display: block;
+}
+
+.languageName{
+  text-align: center;
+}
+
+#description{
+  display: block;
+}
+
+#wiki{
+  font-size: 9px;
+  font-weight: bold;
 }

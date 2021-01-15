@@ -1,94 +1,119 @@
-<!DOCTYPE html>
-<html lang="en-US">
+  <!DOCTYPE html>
+  <html lang="en-US">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="js/jquery-3.5.1.js"></script>
-  <script src="js/scripts.js"></script>
-  <title></title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title></title>
+  </head>
 
-<body>
-  <div class="container">
-    <div class="headings">
-    <h1>Your future programming language!</h1>
-    <p>Welcome! Please enter the following information to determine which programming language you should learn.</p>
-    </div>
-
-    <div class="row">
-      <div class="col-6">
-        <form id="questions">
-
-          <div class="form-group">
-            <label for="name">What is your name?</label>
-            <input id="name" class="form-control" type="text" placeholder="Your name">
-          </div>
-
-          <div class="form-group">
-            <label for="language">Which language are you most interested in?</label>
-            <select class="form-control" id="language">
-              <option>Python</option>
-              <option>C#</option>
-              <option>Javascript</option>
-              <option>None of the Above</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="OS">What OS do you use?</label>
-            <select class="form-control" id="OS">
-              <option>Windows</option>
-              <option>Mac</option>
-              <option>Linux</option>
-              <option>Android</option>
-              <option>iOS</option>
-              <option>Other</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="age">What age bracket are you in?</label>
-            <div class="radio">
-              <input type="radio" name="age" value="u18" checked>Under 18
-            </div>
-            <div class="radio">
-              <input type="radio" name="age" value="adult">18-65
-            </div>
-            <div class="radio">
-              <input type="radio" name="age" value="senior">65+
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="fun">Is coding fun for you?</label>
-            <div class="radio">
-              <input type="radio" name="fun" value="yes" checked><em>HECK</em> yeah!
-            </div>
-            <div class="radio">
-              <input type="radio" name="fun" value="no"><strong>HECK</strong> no.
-            </div>
-          </div>
-
-        </form>
+  <body>
+    <div class="container">
+      <div class="headings">
+        <h1>Your future programming language!</h1>
+        <p>Welcome! Please enter the following information to determine which programming language you should learn.</p>
       </div>
-      <div class="col-6">
-        <div class="result">
-          <img id="python" class="center-image programIcons"
-            src="https://cdn.iconscout.com/icon/free/png-256/python-14-569257.png" alt="Python">
 
-          <img id="cSharp" class="center-image programIcons"
-            src="https://mateuszchrzanowski.github.io/WebCV/img/icons/csharp.png" alt="C#">
+      <div class="row">
+        <div class="col-6">
+          <form id="questions">
 
-          <img id="javascript" class="center-image ProgramIcons"
-            src="https://cdn.iconscout.com/icon/free/png-256/javascript-2038874-1720087.png" alt="Javascript">
+            <div class="form-group">
+              <label for="name">What is your name?</label>
+              <input id="name" class="form-control" type="text" placeholder="Your name">
+            </div>
+
+            <div class="form-group">
+              <label for="language">You're stranded on an island. What do you have on you?</label>
+              <select class="form-control" id="language">
+                <option value="python">A snake</option>
+                <option value="csharp">A hashtag</option>
+                <option value="javascript">A movie script</option>
+                <option value="none">These options are weird. None of the above.</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="OS">What OS do you use?</label>
+              <select class="form-control" id="OS">
+                <option>Windows</option>
+                <option>Mac</option>
+                <option>Linux</option>
+                <option>Android</option>
+                <option>iOS</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="age">What age bracket are you in?</label>
+              <div class="radio">
+                <input type="radio" name="age" value="u18" checked>Under 18
+              </div>
+              <div class="radio">
+                <input type="radio" name="age" value="adult">18-65
+              </div>
+              <div class="radio">
+                <input type="radio" name="age" value="senior">65+
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="fun">Is coding fun for you?</label>
+              <div class="radio">
+                <input type="radio" name="fun" value="yes" checked><em>HECK</em> yeah!
+              </div>
+              <div class="radio">
+                <input type="radio" name="fun" value="no"><strong>HECK</strong> no.
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-dark">Submit</button>
+          </form>
+        </div>
+        <div class="col-6">
+          <div id="result">
+
+            <div class="headings">
+              <h5><span class="name"></span>, your programming language is:</h5>
+            </div>
+
+            <div class="python">
+              <img class="center-image programIcons" src="https://cdn.iconscout.com/icon/free/png-256/python-14-569257.png" alt="Python">
+              <p class="languageName"><strong>Python</strong></p>
+            </div>
+
+            <div class="csharp">
+              <img class="center-image programIcons" src="https://mateuszchrzanowski.github.io/WebCV/img/icons/csharp.png"
+                alt="C#">
+              <p class="languageName"><strong>C#</strong></p>
+            </div>
+
+            <div class="javascript">
+              <img class="center-image ProgramIcons" src="https://cdn.iconscout.com/icon/free/png-256/javascript-2038874-1720087.png" alt="Javascript">
+              <p class="languageName"><strong>C#</strong></p>
+            </div>
+
+            <div id="description">
+              <p class="python">Python is an interpreted, high-level and general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant whitespace. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.</p>
+
+              <p class="csharp">C# is a general-purpose, multi-paradigm programming language encompassing static typing, strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines.[16]</p>
+              
+              <p class="javascript">JavaScript often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.</p>
+
+              <p id="wiki">(From <a href="">Wikipedia</a>)</p>
+
+              <a id="link" href="">Click here to visit their website!</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-</body>
+  </body>
 
-</html>
+  </html>
