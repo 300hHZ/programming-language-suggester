@@ -47,16 +47,3 @@ button{
   font-size: 9px;
   font-weight: bold;
 }
-
-.footer{
-  padding-top: 40px;
-  /* margin-left: 20px; */
-  position: relative;
-  bottom: 0%;
-}
-.footer img{
-  margin-right: 10px;
-  width: 70px;
-  height: 70px;
-  float: left;
-}

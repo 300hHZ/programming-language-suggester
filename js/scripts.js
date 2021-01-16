@@ -1,6 +1,5 @@
 $(document).ready(function () {
   let language = "";
-
   $(questions).submit(function (event) {
     event.preventDefault();
     const name = $("#nameInput").val();
