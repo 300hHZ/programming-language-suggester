@@ -23,6 +23,12 @@ button{
   display: none;
 }
 
+#pepe {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
 .languageIcons{
   width: 50%;
   margin: auto;
@@ -59,3 +65,4 @@ button{
   height: 70px;
   float: left;
 }
+

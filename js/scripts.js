@@ -8,12 +8,14 @@ $(document).ready(function () {
       alert("Please enter your name in the first textbox.");
     }
     else {
-      if (language === "") {
-        $("#result").fadeIn();
-        $("#description").fadeIn();
+      $("#pepe").fadeIn();
+
+      if (!(language === "")) {
+        $("." + language).fadeOut();
       }
       else {
-        $("." + language).fadeOut();
+        $("#result").fadeIn();
+        $("#description").fadeIn();
       }
 
       $("span#nameOutput").text(name);
@@ -35,8 +37,9 @@ $(document).ready(function () {
           language = "javascript";
         }
       }
-
-      $("." + language).fadeIn();
+      $("#pepe").fadeOut(function(){ 
+        $("." + language).fadeIn();
+      });
     }
   });
 });
