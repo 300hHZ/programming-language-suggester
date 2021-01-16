@@ -9,13 +9,9 @@ $(document).ready(function () {
     }
     else {
       $("#pepe").fadeIn();
-
       if (!(language === "")) {
-        $("." + language).fadeOut();
-      }
-      else {
-        $("#result").fadeIn();
-        $("#description").fadeIn();
+        $("#result").hide();
+        $("." + language).hide();
       }
 
       $("span#nameOutput").text(name);
@@ -37,9 +33,9 @@ $(document).ready(function () {
           language = "javascript";
         }
       }
-      $("#pepe").fadeOut(function(){ 
-        $("." + language).fadeIn();
-      });
+
+      $("." + language).show();
+      $("#pepe").fadeOut(function(){ $("#result").fadeIn();});
     }
   });
 });

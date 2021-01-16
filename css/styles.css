@@ -19,7 +19,8 @@ select, input#nameInput{
 button{
   margin-left: 25px;
 }
-#result, #description, .python, .csharp, .javascript {
+
+#result, .python, .csharp, .javascript {
   display: none;
 }
 
