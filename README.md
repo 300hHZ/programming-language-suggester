@@ -12,7 +12,7 @@
 
 ## Description
 
-__
+_Provides a form to fill out, which will automatically determine which programming language is best suited for the user to use. On submission, result will display an image that fades in and out, followed by the resulting programming language and its description._
 
 ## Setup/Installation Requirements
 
